@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: utomatically Roll Deployments with ArgoCD and Helm
+title: Automatically Roll Deployments with ArgoCD and Helm
 email: fperearodriguez@gmail.com
 description: >
   This repository has been changed to use Helm for automatic rollout deployment when the config changes. The application is deployed via ArgoCD.
