@@ -1,5 +1,5 @@
 # Automatically Roll Deployments with ArgoCD and Helm
-Forked repository from [cm-example](https://github.com/christianh814/cm-example). By using ArgoCD and Helm, automatically roll deployments after a configmap change.
+Forked repository from [cm-example](https://github.com/christianh814/cm-example).
 
 In this lab, the sample application has a **configmap**. The main idea is to roll the deployment when the config changes.
 
