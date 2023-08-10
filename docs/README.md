@@ -41,11 +41,11 @@ Let's deploy the application by using ArgoCD:
 oc apply -n openshift-gitops -f app-helm.yaml
 ```
 
-The app is running with the configuraiton indicated in the configmap.
+The app is running with the configuration indicated in the configmap.
 
 Argo application           |  Sample app
 :-------------------------:|:-------------------------:
-![](./assets/images/0-app-argocd.png)  |  ![](./assets/images/1-sample-app.png)
+<img src=./assets/images/0-app-argocd.png width=700>  |  <img src=./assets/images/1-sample-app.png width=700>
 
 ## Update configmap
 Now it's time to update the configmap. Once the configmap is updated, the application will be rolled out automatically to load the new configmap.
@@ -64,7 +64,7 @@ Once Argocd finishes the Sync operation, the application is running with the new
 
 Argo application           |  Sample app
 :-------------------------:|:-------------------------:
-![](./assets/images/4-argocd-new-version.png)  |  ![](./assets/images/5-sample-app.png)
+<img src=./assets/images/4-argocd-new-version.png width=700>  |  <img src=./assets/images/5-sample-app.png width=700>
 
 ## Author
 
