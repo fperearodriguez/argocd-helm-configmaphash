@@ -21,7 +21,7 @@
 title: Automatically Roll Deployments with ArgoCD and Helm
 email: fperearodriguez@gmail.com
 description: >
-  This repository has been changed to use Helm for automatic rollout deployment when the config changes. The application is deployed via ArgoCD.
+  By using ArgoCD and Helm, automatically roll deployments after a configmap change.
 domain: fperearodriguez.github.io 
 url: https://fperearodriguez.github.io
 github_username:
