@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ include "sample-app.serviceAccountName" . }}
+  labels:
+    {{- include "sample-app.labels" . | nindent 4 }}
+  namespace: {{ .Values.namespace }}

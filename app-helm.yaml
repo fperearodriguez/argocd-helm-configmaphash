@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: sample
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: charts/sample-app/
+    repoURL: https://github.com/fperearodriguez/cm-example-argocd
+    targetRevision: main
+    helm:
+      valueFiles:
+        - "values.yaml"
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        maxDuration: 3m0s
+        factor: 2

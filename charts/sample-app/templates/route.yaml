@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ include "sample-app.fullname" . }}
+  labels:
+    {{- include "sample-app.labels" . | nindent 4 }}
+  namespace: {{ .Values.namespace }}
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: {{ include "sample-app.fullname" . }}
+    weight: 100
+  wildcardPolicy: None
