@@ -45,18 +45,18 @@ The app is running with the configuration indicated in the configmap.
 
 Argo application           |  Sample app
 :-------------------------:|:-------------------------:
-<img src=./assets/images/0-app-argocd.png width=700>  |  <img src=./assets/images/1-sample-app.png width=700>
+<img src="./assets/images/0-app-argocd.png" width=2000>  |  <img src="./assets/images/1-sample-app.png" width=2000>
 
 ## Update configmap
 Now it's time to update the configmap. Once the configmap is updated, the application will be rolled out automatically to load the new configmap.
 
 First, edit the values in the configmap. Take a look at the git diff:
 
-<img src=./assets/images/2-git-diff.png width=700>
+<img src="./assets/images/2-git-diff.png" width=700>
 
 Push the code. ArgoCD will refresh and sync:
 
-<img src=./assets/images/3-argocd-cm-changed.png width=700>
+<img src="./assets/images/3-argocd-cm-changed.png" width=700>
 
 See the **configmap** is _OutOfSync_, and also the deployment. Thus, the deployment will be rolled out.
 
@@ -64,7 +64,7 @@ Once Argocd finishes the Sync operation, the application is running with the new
 
 Argo application           |  Sample app
 :-------------------------:|:-------------------------:
-<img src=./assets/images/4-argocd-new-version.png width=700>  |  <img src=./assets/images/5-sample-app.png width=700>
+<img src="./assets/images/4-argocd-new-version.png" width=700>  |  <img src="./assets/images/5-sample-app.png" width=700>
 
 ## Author
 
